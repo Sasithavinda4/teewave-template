@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeeWave - Unique T-Shirts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f8f5f1;
+      color: #000;
+    }
+    header {
+      padding: 20px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .products {
+      padding: 40px 20px;
+    }
+    .products h3 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h4 {
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      background: #fff;
+      align-items: center;
+      gap: 40px;
+    }
+    .about-text, .about-img {
+      flex: 1 1 300px;
+    }
+    .about-text h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .about-text p {
+      color: #555;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TeeWave</h1>
+    <nav>
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Unique T-Shirts for Bold Souls</h2>
+    <p>Explore our exclusive collection of artistic, minimal, and statement t-shirts. Made for those who stand out.</p>
+  </section>
+
+  <section class="products" id="products">
+    <h3>Best Sellers</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="/images/wave.jpg" alt="WAVE T-shirt" />
+        <h4>WAVE</h4>
+      </div>
+      <div class="product">
+        <img src="/images/flower.jpg" alt="Flower T-shirt" />
+        <h4>FLORA</h4>
+      </div>
+      <div class="product">
+        <img src="/images/goodvibes.jpg" alt="Good Vibes T-shirt" />
+        <h4>GOOD VIBES</h4>
+      </div>
+      <div class="product">
+        <img src="/images/face.jpg" alt="Face Art T-shirt" />
+        <h4>ART FACE</h4>
+      </div>
+      <div class="product">
+        <img src="/images/staycool.jpg" alt="Stay Cool T-shirt" />
+        <h4>STAY COOL</h4>
+      </div>
+      <div class="product">
+        <img src="/images/dreamer.jpg" alt="Dreamer T-shirt" />
+        <h4>DREAMER</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <h3>About Us</h3>
+      <p>
+        TeeWave is more than a t-shirt brand. We are a movement of expression, art, and originality. Every design tells a story, made with love, crafted with care.
+      </p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="about-img">
+      <img src="/images/about.jpg" alt="About TeeWave" style="width:100%; border-radius:12px;" />
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TeeWave. All rights reserved.</p>
+  </footer>
+</body>
+</html>
